@@ -3,7 +3,7 @@ use warnings;
 use Bio::DB::GFF;
 use Data::Dumper;
 
-# UTRs seem not to be associated with any CDS explicitly.  (lame)  Still going to agg them because they might have introns.
+
 my $cds_utr = Bio::DB::GFF::Aggregator->new(-method=> 'cds', 
                                             -sub_parts=>[('coding_exon:Coding_transcript')]);
 
