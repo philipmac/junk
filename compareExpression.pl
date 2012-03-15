@@ -135,6 +135,6 @@ foreach my $fileName (@bowtieFiles)
 sub log_2
 {
     my $n = shift;
-    return 0 if $n =~ /DIV/ || $n <= 0;
+    return -999999 if $n =~ /DIV/ || $n <= 0;
     return log($n)/log(2);
 }
