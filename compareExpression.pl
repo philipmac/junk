@@ -1,14 +1,14 @@
 use strict;
 use warnings;
 
-# loads of sucking hacky shit in here... 
+# run at ChenServ:perl ~/mount/compareExpression.pl
 # load up all Reinke stuff. 
 # map geneName to log(exp rat)
 
 my %geneToExp;
 my %cdsToExp; 
 my $lowVal = -99999;
-open (IN, "/home/philip/other_data/prg1_alldata.clean.txt") or die $!;
+open (IN, "/home/philip/other_data/prg1_microarray.clean.50.txt") or die $!;
 while  (<IN>)
 {
     # "Name" "Gene name without alt splice info" "Gene" "Chromosome" "Strand" "Start" "Stop" "average ratio"
