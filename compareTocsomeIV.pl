@@ -1,6 +1,44 @@
 use strict;
 use warnings;
 
+## THIS OUTPUTS THE FOLLOWING ##
+# Hits Reinke Expressed (>50) :647
+# Hits Reinke Not Expressed (>50): 1730
+# Intersection :0
+# Whole PRG1 (hits plus no hits all expression levels):
+ 
+# On I 2637 
+
+# On II 3199 
+
+# On III 2442 
+
+# On IV 2914 
+
+# On V 4554 
+
+# On X 2544 
+# Total Number of genes hit On IV  1715
+# Total Number of genes hit NOT On IV  662
+# Total Number of genes hit Not listed in DB at all  0
+#  I : 156 
+#  II : 133 
+#  III : 121 
+#  IV : 1715 
+#   V : 173 
+#  X : 79 
+# Hits that were in the highly expressed genes Reinke Study:647
+
+# Total Number of genes hit On IV + 169
+# Total Number of genes hit NOT On IV + 478
+#  I : 133 
+#  II : 104 
+#  III : 93 
+#  IV : 169 
+#   V : 104 
+#  X : 44 
+###
+
 # # # # # # # # # # # # # # LOOK UP EVERYTHING IN PRG1 STUDY # 
 my %wholePRG1Study;
 open(IN, "/home/philip/other_data/prg1_alldata.clean.txt");
